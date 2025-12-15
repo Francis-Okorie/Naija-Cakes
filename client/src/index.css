@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+*{
+  font-family: "Outfit", sans-serif;
+}
+
+h1 {
+  font-family: "Cinzel", serif;
+}
+
+span {
+  font-family: "Baskervville", serif;
+}
+
+@theme{
+  --color-primary: #0E0F47;
+  --color-secondary: #FDC238;
+  --color-bgcolor: #FFF8E1;
+  --color-btnyellow:#FDC238;
+  --color-newbg: #f6edde;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}
+
+@media (max-width: 399px) {
+  .xs-title {
+    display: none;
+  }
+}
