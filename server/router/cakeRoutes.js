@@ -7,6 +7,6 @@ import upload from "../middleware/multer.js"
 const cakeRouter = express.Router()
 
 cakeRouter.post("/add",upload.array("imageFiles", 4),userAuth, addCake)
-cakeRouter.get("/get",userAuth, getCakes)
+cakeRouter.get("/get", getCakes)
 
 export default cakeRouter
