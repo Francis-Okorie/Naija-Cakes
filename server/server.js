@@ -16,7 +16,7 @@ app.get("/", (req,res)=>res.send("API is working"));
 app.use("/api/auth", authRouter)
 app.use("/api/cake", cakeRouter)
 app.get("/api/config", (req, res) => {
-  res.json(process.env.PAYPAL_CLIENT_ID);
+  res.send(process.env.PAYPAL_CLIENT_ID);
 });
 
 app.listen(port, ()=> console.log(`Running in port: ${port}`))
